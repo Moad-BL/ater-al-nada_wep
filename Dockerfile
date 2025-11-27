@@ -40,7 +40,6 @@ RUN cp .env.example .env \
     && php artisan key:generate \
     && touch database/database.sqlite \
     && php artisan config:clear \
-    && php artisan cache:clear \
     && php artisan view:clear
 
 # Set proper permissions
